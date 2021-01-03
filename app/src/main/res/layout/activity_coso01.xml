@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CosoActivity01">
+
+  <TextView
+      android:id="@+id/userTextView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="4dp"
+      android:layout_marginTop="36dp"
+      android:text="TextView"
+      android:textSize="18sp"
+      app:layout_constraintStart_toStartOf="@+id/changeMailButt"
+      app:layout_constraintTop_toBottomOf="@+id/changeMailButt" />
+
+  <Button
+      android:id="@+id/changeMailButt"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="112dp"
+      android:text="Cambia Mail"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <LinearLayout
+      android:id="@+id/changeLay"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="50dp"
+      android:layout_marginTop="304dp"
+      android:background="#E39CEF"
+      android:orientation="vertical"
+      android:visibility="invisible"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
+    <EditText
+        android:id="@+id/mailTextChange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nuova Mail"
+        android:inputType="textEmailAddress"
+        tools:layout_editor_absoluteX="62dp"
+        tools:layout_editor_absoluteY="308dp" />
+    <EditText
+        android:id="@+id/oldTextChange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Vecchia Pass"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="62dp"
+        tools:layout_editor_absoluteY="431dp" />
+
+    <EditText
+        android:id="@+id/passTextChange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nuova Pass"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="62dp"
+        tools:layout_editor_absoluteY="431dp" />
+
+    <Button
+        android:id="@+id/confirmChangeMailButt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Conferma" />
+
+    <Button
+        android:id="@+id/cancelChangeMailButt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="10dp"
+        android:text="Annulla" />
+
+  </LinearLayout>
+
+  <Button
+      android:id="@+id/toDBButt"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="20dp"
+      android:text="To DB"
+      app:layout_constraintStart_toEndOf="@+id/changeMailButt"
+      app:layout_constraintTop_toTopOf="@+id/changeMailButt" />
+
+  <Button
+      android:id="@+id/toUserInfoButt"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:text="to User\nInfo"
+      app:layout_constraintStart_toEndOf="@+id/toDBButt"
+      app:layout_constraintTop_toTopOf="@+id/toDBButt" />
+
+  <Button
+      android:id="@+id/toStorageButt"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="12dp"
+      android:layout_marginTop="28dp"
+      android:text="Storage"
+      app:layout_constraintStart_toStartOf="@+id/toUserInfoButt"
+      app:layout_constraintTop_toBottomOf="@+id/toUserInfoButt" />
+</androidx.constraintlayout.widget.ConstraintLayout>

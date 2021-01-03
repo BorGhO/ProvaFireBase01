@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F186AA"
+    tools:context=".Storage_Activity01">
+
+    <ImageView
+        android:id="@+id/storageImageView"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/googleg_standard_color_18" />
+
+    <Button
+        android:id="@+id/loadStorageImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="104dp"
+        android:layout_marginBottom="16dp"
+        android:text="Carica"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/indietroStoreButt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="Indietro"
+        android:onClick="goBack"
+        app:layout_constraintStart_toEndOf="@+id/loadStorageImage"
+        app:layout_constraintTop_toTopOf="@+id/loadStorageImage" />
+</androidx.constraintlayout.widget.ConstraintLayout>

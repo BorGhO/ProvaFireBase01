@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3D871"
+    tools:context=".ProfileActivity01">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="215dp"
+        tools:layout_editor_absoluteY="280dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Inserisci i tuoi dati Bomber"
+            android:textAlignment="center"
+            android:textSize="24dp"
+            android:layout_marginTop="20dp"
+            />
+
+        <EditText
+            android:id="@+id/firstNomeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Nome"
+            android:layout_marginTop="20dp"/>
+        <EditText
+            android:id="@+id/lastNomeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Cognome"
+            android:layout_marginTop="20dp"/>
+        <EditText
+            android:id="@+id/userNomeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Username"
+            android:layout_marginTop="20dp"
+            />
+
+        <Button
+            android:id="@+id/updateUserButt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            />
+
+        <Button
+            android:id="@+id/button06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:onClick="goBack"
+            android:text="Indietro"
+            app:backgroundTint="#2196F3" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
